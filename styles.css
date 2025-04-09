@@ -1,0 +1,47 @@
+/* Global Styles */
+body {
+    margin: 0; /* Reseta a margem do corpo para 0 */
+    padding: 0; /* Reseta o preenchimento do corpo para 0 */
+    font-family: Arial, sans-serif; /* Define a fonte do texto */
+    color: white; /* Cor do texto */
+    position: relative; /* Define o posicionamento do corpo como relativo, o que é útil para posicionar outros elementos de forma absoluta */
+}
+  
+/* Container with the background image */
+.container {
+    background: url('./assets/background.png') no-repeat center center/cover; /* Define a imagem de fundo, centraliza, impede a repetição e cobre todo o container */
+    min-height: 100vh; /* Define a altura mínima do container para ocupar pelo menos 100% da altura da viewport */
+    display: flex; /* Usa o modelo de layout Flexbox para facilitar o alinhamento */
+    justify-content: center; /* Centraliza o conteúdo horizontalmente dentro do container flexível */
+    align-items: center; /* Centraliza o conteúdo verticalmente dentro do container flexível */
+}
+  
+/* Content div for text and button */
+.content {
+    text-align: center; /* Centraliza o texto dentro da div */
+    background-color: rgba(0, 0, 0, 0.5); /* Define a cor de fundo como preto com 50% de opacidade */
+    padding: 1.25rem 2.5rem; /* Define o preenchimento interno (espaçamento) da div usando unidades relativas (rem) */
+    border-radius: 0.5rem; /* Define o raio da borda, criando cantos arredondados */
+}
+  
+.content h2 {
+    margin-bottom: 1.25rem; /* Define a margem inferior do cabeçalho h2 */
+}
+  
+/* Button Styles */
+button {
+    background-color: #e7c06a; /* Define a cor de fundo do botão */
+    border: none; /* Remove a borda padrão do botão */
+    padding: 0.625rem 1.25rem; /* Define o preenchimento interno do botão */
+    font-size: 1.2em; /* Define o tamanho da fonte do texto */
+    color: white; /* Define a cor do texto do botão */
+    cursor: pointer; /* Define o cursor do mouse como uma mão, indicando que é clicável */
+    transition: background-color 0.3s ease; /* Adiciona uma transição suave para a propriedade de cor de fundo */
+    transition: all 0.3s ease-in-out;
+    transform: scale(1);
+}
+  
+button:hover {
+    background-color: #1ABC9C; /* Muda a cor de fundo do botão ao passar o mouse */
+    transform: scale(1.1); /* Aumenta o tamanho do botão em 10% ao passar o mouse */
+}
